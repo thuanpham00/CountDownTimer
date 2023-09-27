@@ -191,9 +191,8 @@ body {
         box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
 
         @include screen(sm) {
-            top: 20px;
             left: 50px;
-            min-width: 320px;
+            min-width: 300px;
         }
     }
 
@@ -443,11 +442,6 @@ body {
         outline: none;
         background: #eee;
         border: 1px solid #dadada;
-
-        @include screen(sm) {
-            padding: 10px 10px;
-            margin-top: 10px;
-        }
     }
 
     button {
@@ -460,8 +454,6 @@ body {
     }
 
     @include screen(sm) {
-        max-width: 300px;
-        margin-top: 60px;
-        left: 50px;
+        ma;
     }
 }

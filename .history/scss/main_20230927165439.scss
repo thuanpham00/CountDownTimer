@@ -146,24 +146,6 @@ button {
     font-family: inherit;
 }
 
-@mixin screen($dev) {
-    @if $dev == lg {
-        @media (max-width: 991.98px) {
-            @content;
-        }
-    }
-    @if $dev == md {
-        @media (max-width: 767.98px) {
-            @content;
-        }
-    }
-    @if $dev == sm {
-        @media (max-width: 575.98px) {
-            @content;
-        }
-    }
-}
-
 $continer-color: #0a6cf1;
 $continer-padding: 30px 20px 10px 20px;
 body {
@@ -175,10 +157,6 @@ body {
     position: relative;
     min-height: 400px;
 
-    @include screen(sm) {
-        min-height: 200px;
-    }
-
     &-wrapper {
         position: absolute;
         left: 150px;
@@ -189,12 +167,6 @@ body {
         color: #fff;
         min-width: 450px;
         box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
-
-        @include screen(sm) {
-            top: 20px;
-            left: 50px;
-            min-width: 320px;
-        }
     }
 
     label {
@@ -235,20 +207,12 @@ body {
                 font-size: 36pt;
                 width: 100%;
                 display: block;
-
-                @include screen(sm) {
-                    font-size: 3rem;
-                }
             }
             span {
                 font-size: 8pt;
                 opacity: 0.8;
                 width: 100%;
                 display: block;
-
-                @include screen(sm) {
-                    font-size: 1.2rem;
-                }
             }
         }
         .hours::before,
@@ -261,10 +225,6 @@ body {
             margin-top: 10px;
             opacity: 0.7;
             animation: pink 1s ease-in-out infinite;
-
-            @include screen(sm) {
-                font-size: 1.5rem;
-            }
         }
     }
 
@@ -276,15 +236,6 @@ body {
         padding: 20px;
         border-radius: 10px;
         width: 500px;
-
-        @include screen(lg) {
-            top: 500px;
-        }
-
-        @include screen(sm) {
-            right: 50px;
-            width: 300px;
-        }
     }
 
     .player-box {
@@ -430,7 +381,7 @@ body {
     }
 }
 
-.form-timer {
+.form-timer {   
     position: absolute;
     left: 150px;
     margin-top: -100px;
@@ -443,11 +394,6 @@ body {
         outline: none;
         background: #eee;
         border: 1px solid #dadada;
-
-        @include screen(sm) {
-            padding: 10px 10px;
-            margin-top: 10px;
-        }
     }
 
     button {
@@ -458,10 +404,8 @@ body {
         color: #fff;
         font-weight: 500;
     }
+}
 
-    @include screen(sm) {
-        max-width: 300px;
-        margin-top: 60px;
-        left: 50px;
-    }
+@mixin screen($devices) {
+    if $devices == lg {}
 }

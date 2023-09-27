@@ -175,10 +175,6 @@ body {
     position: relative;
     min-height: 400px;
 
-    @include screen(sm) {
-        min-height: 200px;
-    }
-
     &-wrapper {
         position: absolute;
         left: 150px;
@@ -189,11 +185,10 @@ body {
         color: #fff;
         min-width: 450px;
         box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
-
+   
         @include screen(sm) {
-            top: 20px;
             left: 50px;
-            min-width: 320px;
+            min-width: 300px;
         }
     }
 
@@ -237,7 +232,7 @@ body {
                 display: block;
 
                 @include screen(sm) {
-                    font-size: 3rem;
+                    font-size: ;
                 }
             }
             span {
@@ -245,10 +240,6 @@ body {
                 opacity: 0.8;
                 width: 100%;
                 display: block;
-
-                @include screen(sm) {
-                    font-size: 1.2rem;
-                }
             }
         }
         .hours::before,
@@ -261,10 +252,6 @@ body {
             margin-top: 10px;
             opacity: 0.7;
             animation: pink 1s ease-in-out infinite;
-
-            @include screen(sm) {
-                font-size: 1.5rem;
-            }
         }
     }
 
@@ -443,11 +430,6 @@ body {
         outline: none;
         background: #eee;
         border: 1px solid #dadada;
-
-        @include screen(sm) {
-            padding: 10px 10px;
-            margin-top: 10px;
-        }
     }
 
     button {
@@ -457,11 +439,5 @@ body {
         border: none;
         color: #fff;
         font-weight: 500;
-    }
-
-    @include screen(sm) {
-        max-width: 300px;
-        margin-top: 60px;
-        left: 50px;
     }
 }
