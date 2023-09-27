@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Count Down</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <div class="timer">
+            <div class="timer-wrapper">
+                <div>
+                    <label class="timer-title">Project Name</label>
+                    <label class="timer-name">Count Down Timer</label>
+                </div>
+                <div class="counter">
+                    <div class="days">
+                        <div class="value" id="days">00</div>
+                        <span>Days</span>
+                    </div>
+
+                    <div class="hours">
+                        <div class="value" id="hours">00</div>
+                        <span>Hours</span>
+                    </div>
+
+                    <div class="minutes">
+                        <div class="value" id="minutes">00</div>
+                        <span>Minutes</span>
+                    </div>
+
+                    <div class="seconds">
+                        <div class="value" id="seconds">00</div>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="form-timer">
+            <input type="text" name="day" placeholder="Thứ" class="dayInput" />
+            <input
+                type="text"
+                name="date"
+                placeholder="Ngày"
+                class="dateInput"
+            />
+            <input
+                type="text"
+                name="month"
+                placeholder="Tháng"
+                class="monthInput"
+            />
+            <input
+                type="number"
+                name="year"
+                placeholder="Năm"
+                value="2023"
+                class="yearInput"
+            />
+            <input
+                type="number"
+                name="hour"
+                placeholder="Giờ"
+                class="hourInput"
+                value="0"
+            />
+            <input
+                type="number"
+                name="minute"
+                placeholder="Phút"
+                class="minuteInput"
+                value="00"
+            />
+            <input
+                type="text"
+                name="GMT"
+                value="GMT+0700 (Indochina Time)"
+                class="hourInput"
+            />
+            <button class="todo__submit" type="submit">Add</button>
+        </form>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
