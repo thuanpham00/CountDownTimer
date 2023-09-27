@@ -108,8 +108,8 @@ window.addEventListener("load", function () {
             btnPlay.classList.add("fa-pause");
             playerImg.classList.add("is-playing");
             song.play();
-            const name = song.getAttribute("src");
-            nameMusic.textContent = name;
+            // const name = song.getAttribute("src").textContent;
+            // console.log(name)
         } else {
             // khi nhạc đang tắt thì đổi thành true (phát nhạc)
             playing = true;
@@ -117,8 +117,7 @@ window.addEventListener("load", function () {
             btnPlay.classList.remove("fa-pause");
             playerImg.classList.remove("is-playing");
             song.pause();
-            const name = song.getAttribute("src");
-            nameMusic.textContent = name;
+            nameMusic.textContent = song.getAttribute("src").textContent;        
         }
     }
 
@@ -170,9 +169,9 @@ window.addEventListener("load", function () {
         return `0${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
     }
     const timer = setInterval(checkTimer, 1000); // chạy hàm sau mỗi lần 1s để nó reset tăng lên thời gian hiện tại (currentTime)
-    bar.addEventListener("change", function (e) {
+    bar.addEventListener("change", function(e) {
         song.currentTime = bar.value;
-    });
+    })
 
     checkTimer();
 });
