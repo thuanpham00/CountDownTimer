@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Count Down</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <div class="timer">
+            <div class="timer-wrapper">
+                <div>
+                    <label class="timer-title">Project Name</label>
+                    <label class="timer-name">Count Down Timer</label>
+                </div>
+                <div class="counter">
+                    <div class="days">
+                        <div class="value" id="days">00</div>
+                        <span>Days</span>
+                    </div>
+
+                    <div class="hours">
+                        <div class="value" id="hours">00</div>
+                        <span>Hours</span>
+                    </div>
+
+                    <div class="minutes">
+                        <div class="value" id="minutes">00</div>
+                        <span>Minutes</span>
+                    </div>
+
+                    <div class="seconds">
+                        <div class="value" id="seconds">00</div>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-box">
+                    <!-- <div class="player-media">
+                        <img
+                            src="/assets/img/mthis.png"
+                            alt=""
+                            class="player-image"
+                        /> 
+                    </div> -->
+                    <!-- <div class="player-nameMusic">mien-man.mp3</div> -->
+                    <div class="songs-container">
+                        <div class="song" data-index="0">
+                            <h2>Lần cuối</h2>
+                            <p>Ngọt</p>
+                            <img src="${song.img}" alt="${song.name}" />
+                            <audio src="${song.path}" controls></audio>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <input
+                            type="range"
+                            id="progress-bar"
+                            min="0"
+                            max=""
+                            value="0"
+                            class="bar"
+                        />
+                    </div>
+                    <div class="player-number">
+                        <span class="player-remaining">0:00</span>
+                        <span class="player-duration">0:00</span>
+                    </div>
+                </div>
+                <div class="player-tool">
+                    <i class="fa fa-backward player-prev"></i>
+                    <i class="fa fa-play player-play"></i>
+                    <i class="fa fa-forward player-next"></i>
+                </div>
+            </div>
+        </div>
+        <form class="form-timer">
+            <input
+                value="Web"
+                type="text"
+                name="day"
+                placeholder="Thứ"
+                class="dayInput"
+            />
+            <input
+                type="text"
+                name="date"
+                placeholder="Ngày"
+                value="27"
+                class="dateInput"
+            />
+            <input
+                type="text"
+                name="month"
+                placeholder="Tháng"
+                value="Sep"
+                class="monthInput"
+            />
+            <input
+                type="number"
+                name="year"
+                placeholder="Năm"
+                value="2023"
+                class="yearInput"
+            />
+            <input
+                type="number"
+                name="hour"
+                placeholder="Giờ"
+                class="hourInput"
+                value="0"
+            />
+            <input
+                type="number"
+                name="minute"
+                placeholder="Phút"
+                class="minuteInput"
+                value="00"
+            />
+            <input
+                type="text"
+                name="GMT"
+                value="GMT+0700 (Indochina Time)"
+                class="hourInput"
+            />
+            <button class="todo__submit" type="submit">Add</button>
+        </form>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
