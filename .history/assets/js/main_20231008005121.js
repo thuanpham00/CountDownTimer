@@ -1,15 +1,12 @@
 window.addEventListener("load", function () {
     function timerDate() {
-        // this đại diện cho timerDate
         this.daysText = document.querySelector("#days");
         this.hoursText = document.querySelector("#hours");
         this.minutesText = document.querySelector("#minutes");
         this.secondsText = document.querySelector("#seconds");
         this.formTimer = document.querySelector(".form-timer");
 
-        this.formTimer.addEventListener("submit", (e) =>
-            this.timerInputForm(e)
-        );
+        this
     }
     new timerDate();
     timerDate.prototype.setTimer = function (
@@ -32,9 +29,9 @@ window.addEventListener("load", function () {
 
         if (isNaN(endTime) || endTime - currentTime <= 0) return;
         const that = this; // that để lưu trữ tham chiếu đến đối tượng timerDate (this).
-        setInterval(function () {
+        setInterval(function() {
             changeTimer.call(that);
-        }, 500);
+        },500);
         changeTimer();
 
         function changeTimer() {
@@ -75,16 +72,18 @@ window.addEventListener("load", function () {
         ];
         return months.indexOf(monthName);
     };
-    timerDate.prototype.timerInputForm = function (e) {
+
+    const timerDateForm = new timerDate();
+    timerDateForm.formTimer.addEventListener("submit", function (e) {
         e.preventDefault();
-        const dayInput = this.formTimer.elements["day"].value;
-        const monthInput = this.formTimer.elements["month"].value;
-        const dateInput = parseInt(this.formTimer.elements["date"].value);
-        const yearInput = parseInt(this.formTimer.elements["year"].value);
-        const hourInput = parseInt(this.formTimer.elements["hour"].value);
-        const minuteInput = parseInt(this.formTimer.elements["minute"].value);
-        const gmtInput = this.formTimer.elements["GMT"].value;
-        this.setTimer(
+        const dayInput = this.elements["day"].value;
+        const monthInput = this.elements["month"].value;
+        const dateInput = parseInt(this.elements["date"].value);
+        const yearInput = parseInt(this.elements["year"].value);
+        const hourInput = parseInt(this.elements["hour"].value);
+        const minuteInput = parseInt(this.elements["minute"].value);
+        const gmtInput = this.elements["GMT"].value;
+        timerDateForm.setTimer(
             dayInput,
             monthInput,
             dateInput,
@@ -93,7 +92,7 @@ window.addEventListener("load", function () {
             minuteInput,
             gmtInput
         );
-    };
+    });
 
     // xử lý nhạc
     const container = document.querySelector(".songs-container");

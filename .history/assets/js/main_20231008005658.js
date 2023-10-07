@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
     function timerDate() {
-        // this đại diện cho timerDate
         this.daysText = document.querySelector("#days");
         this.hoursText = document.querySelector("#hours");
         this.minutesText = document.querySelector("#minutes");
@@ -75,6 +74,8 @@ window.addEventListener("load", function () {
         ];
         return months.indexOf(monthName);
     };
+
+    // const timerDateForm = new timerDate();
     timerDate.prototype.timerInputForm = function (e) {
         e.preventDefault();
         const dayInput = this.formTimer.elements["day"].value;

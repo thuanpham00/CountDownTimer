@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
     function timerDate() {
-        // this đại diện cho timerDate
         this.daysText = document.querySelector("#days");
         this.hoursText = document.querySelector("#hours");
         this.minutesText = document.querySelector("#minutes");
@@ -75,15 +74,17 @@ window.addEventListener("load", function () {
         ];
         return months.indexOf(monthName);
     };
+
+    // const timerDateForm = new timerDate();
     timerDate.prototype.timerInputForm = function (e) {
         e.preventDefault();
         const dayInput = this.formTimer.elements["day"].value;
-        const monthInput = this.formTimer.elements["month"].value;
-        const dateInput = parseInt(this.formTimer.elements["date"].value);
-        const yearInput = parseInt(this.formTimer.elements["year"].value);
-        const hourInput = parseInt(this.formTimer.elements["hour"].value);
-        const minuteInput = parseInt(this.formTimer.elements["minute"].value);
-        const gmtInput = this.formTimer.elements["GMT"].value;
+        const monthInput = this.formelements["month"].value;
+        const dateInput = parseInt(this.formelements["date"].value);
+        const yearInput = parseInt(this.formelements["year"].value);
+        const hourInput = parseInt(this.formelements["hour"].value);
+        const minuteInput = parseInt(this.formelements["minute"].value);
+        const gmtInput = this.formelements["GMT"].value;
         this.setTimer(
             dayInput,
             monthInput,
