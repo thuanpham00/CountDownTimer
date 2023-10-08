@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    function timerDate() {
+    function TimerDate() {
         // this đại diện cho timerDate
         this.daysText = document.querySelector("#days");
         this.hoursText = document.querySelector("#hours");
@@ -11,8 +11,8 @@ window.addEventListener("load", function () {
             this.timerInputForm(e)
         );
     }
-    new timerDate();
-    timerDate.prototype.setTimer = function (
+    new TimerDate();
+    TimerDate.prototype.setTimer = function (
         dayInput,
         monthInput,
         dateInput,
@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
         ).getTime();
 
         if (isNaN(endTime) || endTime - currentTime <= 0) return;
-        const that = this; // that để lưu trữ tham chiếu đến đối tượng timerDate (this).
+        const that = this; // that để lưu trữ tham chiếu đến đối tượng TimerDate (this).
         setInterval(function () {
             changeTimer.call(that);
         }, 500);
@@ -58,7 +58,7 @@ window.addEventListener("load", function () {
             }
         }
     };
-    timerDate.prototype.getMonthIndex = function (monthName) {
+    TimerDate.prototype.getMonthIndex = function (monthName) {
         const months = [
             "Jan",
             "Feb",
@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
         ];
         return months.indexOf(monthName);
     };
-    timerDate.prototype.timerInputForm = function (e) {
+    TimerDate.prototype.timerInputForm = function (e) {
         e.preventDefault();
         const dayInput = this.formTimer.elements["day"].value;
         const monthInput = this.formTimer.elements["month"].value;
@@ -134,6 +134,24 @@ window.addEventListener("load", function () {
                 name: "Vết thương",
                 singer: "Fishy",
                 path: "./assets/files/vet-thuong.mp3",
+                img: "./assets/img/mthis.png",
+            },
+            {
+                name: "Bạn đời",
+                singer: "Karik",
+                path: "./assets/files/ban-doi.mp3",
+                img: "./assets/img/mthis.png",
+            },
+            {
+                name: "Vì mẹ anh bắt chia tay",
+                singer: "Karik - Miu lê",
+                path: "./assets/files/vi-me-anh-bat-chia-tay.mp3",
+                img: "./assets/img/mthis.png",
+            },
+            {
+                name: "We go hard",
+                singer: "Rap Việt",
+                path: "./assets/files/we-go-hard.mp3",
                 img: "./assets/img/mthis.png",
             },
             // Thêm nhiều bài hát khác ở đây

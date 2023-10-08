@@ -154,12 +154,16 @@ button {
 }
 
 body {
-  background: #ffc4a4;
+  background: url("/assets/img/background-3.jpg") center;
   user-select: none;
 }
 
 .timer {
-  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-height: 400px;
   /* .bar::-webkit-slider-thumb chọn phần tử con của phần tử có lớp bar mà là "thumb" của thanh trượt (slider)
    dành cho trình duyệt WebKit (chẳng hạn như Safari hoặc Chrome).
@@ -174,9 +178,6 @@ body {
   }
 }
 .timer-wrapper {
-  position: absolute;
-  left: 150px;
-  top: 50px;
   background-color: #0a6cf1;
   padding: 30px 20px 10px 20px;
   border-radius: 8px;
@@ -275,13 +276,11 @@ body {
   }
 }
 .timer .player {
-  position: absolute;
-  right: 150px;
-  top: 50px;
+  margin-top: 100px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 500px;
+  width: 400px;
 }
 @media (max-width: 991.98px) {
   .timer .player {
@@ -417,7 +416,7 @@ body {
 }
 .form-timer {
   position: absolute;
-  left: 150px;
+  left: 170px;
   margin-top: -100px;
   max-width: 500px;
 }
@@ -452,6 +451,7 @@ body {
 }
 
 .img {
+  margin-top: 20px;
   width: 50px;
   height: 50px;
   border-radius: 99px;
