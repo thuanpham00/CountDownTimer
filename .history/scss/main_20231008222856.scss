@@ -168,7 +168,7 @@ $container-color: #0a6cf1;
 $container-padding: 30px 20px 10px 20px;
 
 body {
-    background: url('/assets/img/background-3.jpg');
+    background: url(".../assets/img/background.jpg");
     user-select: none;
 }
 
@@ -182,7 +182,6 @@ body {
 
     @include screen(sm) {
         min-height: 200px;
-        
     }
 
     &-wrapper {
