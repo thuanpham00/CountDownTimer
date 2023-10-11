@@ -169,32 +169,20 @@ window.addEventListener("load", function () {
             },
             {
                 name: "Chỉ một đêm nữa thôi",
-                singer: "MCK",
+                singer: "Rap Việt",
                 path: "./assets/files/chi-mot-dem-nua-thoi.mp3",
                 img: "./assets/img/mthis.png",
             },
             {
                 name: "Giờ thì ai cười",
-                singer: "HieuThuHai",
+                singer: "Rap Việt",
                 path: "./assets/files/gio-thi-ai-cuoi.mp3",
                 img: "./assets/img/mthis.png",
             },
             {
-                name: "Khi cơn mơ đang dần phai",
-                singer: "Tez",
-                path: "./assets/files/khi-con-mo-dang-dan-phai.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Nghe như tình yêu",
-                singer: "MCK remake",
-                path: "./assets/files/nghe-nhu-tinh-yeu.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Tại vì sao",
-                singer: "MCK",
-                path: "./assets/files/tai-vi-sao.mp3",
+                name: "We go hard",
+                singer: "Rap Việt",
+                path: "./assets/files/we-go-hard.mp3",
                 img: "./assets/img/mthis.png",
             },
             // Thêm nhiều bài hát khác ở đây

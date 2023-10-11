@@ -185,18 +185,6 @@ window.addEventListener("load", function () {
                 path: "./assets/files/khi-con-mo-dang-dan-phai.mp3",
                 img: "./assets/img/mthis.png",
             },
-            {
-                name: "Nghe như tình yêu",
-                singer: "MCK remake",
-                path: "./assets/files/nghe-nhu-tinh-yeu.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Tại vì sao",
-                singer: "MCK",
-                path: "./assets/files/tai-vi-sao.mp3",
-                img: "./assets/img/mthis.png",
-            },
             // Thêm nhiều bài hát khác ở đây
         ],
 

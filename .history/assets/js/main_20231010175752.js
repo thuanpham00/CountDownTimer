@@ -97,137 +97,98 @@ window.addEventListener("load", function () {
     };
 
     // xử lý nhạc
-    const container = document.querySelector(".songs-container");
-    let currentSongIndex = 0; // Đặt chỉ mục ban đầu thành 0 hoặc chỉ mục của bài hát mặc định
-    const listMusicRender = {
-        songs: [
-            {
-                name: "Lần cuối",
-                singer: "Ngọt",
-                path: "./assets/files/lan-cuoi.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Miên man",
-                singer: "Minh Huy",
-                path: "./assets/files/mien-man.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Nếu một ngày chúng ta không còn gặp",
-                singer: "Dick",
-                path: "./assets/files/neu-mot-ngay-chung-ta-khong-con-gap.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Tháng 11 có em",
-                singer: "Thanh Hòa",
-                path: "./assets/files/thang-11-co-em.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Tình cờ yêu em",
-                singer: "Kunn Đức Nam",
-                path: "./assets/files/tinh-co-yeu-em.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Vết thương",
-                singer: "Fishy",
-                path: "./assets/files/vet-thuong.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Bạn đời",
-                singer: "Karik",
-                path: "./assets/files/ban-doi.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Vì mẹ anh bắt chia tay",
-                singer: "Karik - Miu lê",
-                path: "./assets/files/vi-me-anh-bat-chia-tay.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "We go hard",
-                singer: "Rap Việt",
-                path: "./assets/files/we-go-hard.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Anh đã ổn hơn",
-                singer: "MCK",
-                path: "./assets/files/anh-da-on-hon.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Anh luôn như vây",
-                singer: "Bray",
-                path: "./assets/files/anh-luon-nhu-vay.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Chỉ một đêm nữa thôi",
-                singer: "MCK",
-                path: "./assets/files/chi-mot-dem-nua-thoi.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Giờ thì ai cười",
-                singer: "HieuThuHai",
-                path: "./assets/files/gio-thi-ai-cuoi.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Khi cơn mơ đang dần phai",
-                singer: "Tez",
-                path: "./assets/files/khi-con-mo-dang-dan-phai.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Nghe như tình yêu",
-                singer: "MCK remake",
-                path: "./assets/files/nghe-nhu-tinh-yeu.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Tại vì sao",
-                singer: "MCK",
-                path: "./assets/files/tai-vi-sao.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            // Thêm nhiều bài hát khác ở đây
-        ],
+    function MusicPlayer() {
+        this.container = document.querySelector(".songs-container");
+        this.currentSongIndex = 0; // Đặt chỉ mục ban đầu thành 0 hoặc chỉ mục của bài hát mặc định
+        this.listMusicRender = {
+            songs: [
+                {
+                    name: "Lần cuối",
+                    singer: "Ngọt",
+                    path: "./assets/files/lan-cuoi.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Miên man",
+                    singer: "Minh Huy",
+                    path: "./assets/files/mien-man.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Nếu một ngày chúng ta không còn gặp",
+                    singer: "Dick",
+                    path: "./assets/files/neu-mot-ngay-chung-ta-khong-con-gap.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Tháng 11 có em",
+                    singer: "Thanh Hòa",
+                    path: "./assets/files/thang-11-co-em.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Tình cờ yêu em",
+                    singer: "Kunn Đức Nam",
+                    path: "./assets/files/tinh-co-yeu-em.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Vết thương",
+                    singer: "Fishy",
+                    path: "./assets/files/vet-thuong.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Bạn đời",
+                    singer: "Karik",
+                    path: "./assets/files/ban-doi.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "Vì mẹ anh bắt chia tay",
+                    singer: "Karik - Miu lê",
+                    path: "./assets/files/vi-me-anh-bat-chia-tay.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                {
+                    name: "We go hard",
+                    singer: "Rap Việt",
+                    path: "./assets/files/we-go-hard.mp3",
+                    img: "./assets/img/mthis.png",
+                },
+                // Thêm nhiều bài hát khác ở đây
+            ],
 
-        render: function () {
-            const song = this.songs[currentSongIndex];
-            const htmls = `<div class="song" data-index="${currentSongIndex}">
-                    <h2>${song.name}</h2>
-                    <p>${song.singer}</p>
-                    <img src="${song.img}" alt="${song.name}" class="img" />
-                    <audio src="${song.path}" controls id="song" style="display: none"></audio>
-                </div>
-            `;
-            container.innerHTML = htmls;
-        },
-    };
+            render: function () {
+                const song = this.songs[currentSongIndex];
+                const htmls = `<div class="song" data-index="${currentSongIndex}">
+                        <h2>${song.name}</h2>
+                        <p>${song.singer}</p>
+                        <img src="${song.img}" alt="${song.name}" class="img" />
+                        <audio src="${song.path}" controls id="song" style="display: none"></audio>
+                    </div>
+                `;
+                container.innerHTML = htmls;
+            },
+        };
 
-    listMusicRender.render();
-    const btnPlay = document.querySelector(".player-play");
-    const btnNext = document.querySelector(".player-next");
-    const btnPrev = document.querySelector(".player-prev");
-    const bar = document.querySelector(".bar");
-    const currentTimeText = document.querySelector(".player-remaining");
-    const durationTimeText = document.querySelector(".player-duration");
-    const audio = document.querySelector("#song");
+        this.btnPlay = document.querySelector(".player-play");
+        this.btnNext = document.querySelector(".player-next");
+        this.btnPrev = document.querySelector(".player-prev");
+        this.bar = document.querySelector(".bar");
+        this.currentTimeText = document.querySelector(".player-remaining");
+        this.durationTimeText = document.querySelector(".player-duration");
+        this.audio = document.querySelector("#song");
+        this.playing = false;
+        this.songs = listMusicRender.songs;
 
-    let playing = false;
-    const songs = listMusicRender.songs;
+        this.btnPlay.addEventListener("click", playMusic);
+    }
 
-    btnPlay.addEventListener("click", playMusic);
+    this.listMusicRender.render();
 
-    function playMusic(e) {
+
+    MusicPlayer.prototype.playMusic = function () {
         if (playing) {
             playing = false;
             btnPlay.classList.remove("fa-pause");

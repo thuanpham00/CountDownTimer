@@ -187,14 +187,8 @@ window.addEventListener("load", function () {
             },
             {
                 name: "Nghe như tình yêu",
-                singer: "MCK remake",
+                singer: "Rap Việt",
                 path: "./assets/files/nghe-nhu-tinh-yeu.mp3",
-                img: "./assets/img/mthis.png",
-            },
-            {
-                name: "Tại vì sao",
-                singer: "MCK",
-                path: "./assets/files/tai-vi-sao.mp3",
                 img: "./assets/img/mthis.png",
             },
             // Thêm nhiều bài hát khác ở đây
