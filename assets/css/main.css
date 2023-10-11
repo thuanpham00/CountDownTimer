@@ -172,6 +172,12 @@ body {
   thanh trượt (slider) dành cho trình duyệt Firefox (Mozilla).
   */
 }
+@media (max-width: 991.98px) {
+  .timer {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+}
 @media (max-width: 575.98px) {
   .timer {
     min-height: 200px;
@@ -187,9 +193,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .timer-wrapper {
-    top: 20px;
-    left: 50px;
-    min-width: 320px;
+    min-width: 300px;
   }
 }
 .timer label {
@@ -276,21 +280,17 @@ body {
   }
 }
 .timer .player {
+  height: 350px;
+  width: 450px;
   margin-top: 100px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
-}
-@media (max-width: 991.98px) {
-  .timer .player {
-    top: 500px;
-  }
 }
 @media (max-width: 575.98px) {
   .timer .player {
-    right: 50px;
     width: 300px;
+    height: 350px;
   }
 }
 .timer .player-box {
@@ -417,8 +417,22 @@ body {
 .form-timer {
   position: absolute;
   left: 170px;
-  margin-top: -100px;
+  top: 330px;
   max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 991.98px) {
+  .form-timer {
+    top: 700px;
+    left: 160px;
+  }
+}
+@media (max-width: 575.98px) {
+  .form-timer {
+    top: 700px;
+    left: 40px;
+  }
 }
 .form-timer input {
   margin-top: 30px;
@@ -428,14 +442,21 @@ body {
   background: #eee;
   border: 1px solid #dadada;
 }
+@media (max-width: 991.98px) {
+  .form-timer input {
+    width: 108px;
+  }
+}
 @media (max-width: 575.98px) {
   .form-timer input {
     padding: 10px 10px;
     margin-top: 10px;
+    width: 90px;
   }
 }
 .form-timer button {
-  width: 100px;
+  margin-top: 30px;
+  width: 108px;
   padding: 10px 15px;
   background: #fd3a3a;
   border: none;
@@ -443,10 +464,10 @@ body {
   font-weight: 500;
 }
 @media (max-width: 575.98px) {
-  .form-timer {
-    max-width: 300px;
-    margin-top: 60px;
-    left: 50px;
+  .form-timer button {
+    padding: 10px 10px;
+    margin-top: 10px;
+    width: 90px;
   }
 }
 

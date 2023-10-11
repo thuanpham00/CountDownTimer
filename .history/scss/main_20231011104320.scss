@@ -436,8 +436,6 @@ body {
     left: 170px;
     top: 330px;
     max-width: 500px;
-    display: flex;
-    flex-wrap: wrap;
 
     @include screen(lg) {
         top: 700px;
@@ -445,7 +443,8 @@ body {
     }
 
     @include screen(sm) {
-        top: 700px;
+        margin-bottom: 50px;
+        top: 720px;
         left: 40px;
     }
 
@@ -456,6 +455,7 @@ body {
         outline: none;
         background: #eee;
         border: 1px solid #dadada;
+
         @include screen(lg) {
             width: 108px;
         }
@@ -463,24 +463,16 @@ body {
         @include screen(sm) {
             padding: 10px 10px;
             margin-top: 10px;
-            width: 90px;
         }
     }
 
     button {
-        margin-top: 30px;
-        width: 108px;
+        width: 100px;
         padding: 10px 15px;
         background: #fd3a3a;
         border: none;
         color: #fff;
         font-weight: 500;
-        
-        @include screen(sm) {
-            padding: 10px 10px;
-            margin-top: 10px;
-            width: 90px;
-        }
     }
 }
 

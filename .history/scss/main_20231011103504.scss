@@ -180,14 +180,13 @@ body {
     justify-content: space-between;
     min-height: 400px;
 
-    
+    @include screen(sm) {
+        min-height: 200px;
+    }
+
     @include screen(lg) {
         flex-direction: column-reverse;
         row-gap: 20px;
-    }
-    
-    @include screen(sm) {
-        min-height: 200px;
     }
 
     &-wrapper {
@@ -199,7 +198,9 @@ body {
         box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
 
         @include screen(sm) {
-            min-width: 300px;
+            top: 20px;
+            left: 50px;
+            min-width: 320px;
         }
     }
 
@@ -282,9 +283,13 @@ body {
         padding: 20px;
         border-radius: 10px;
 
+        @include screen(lg) {
+            // top: 500px;
+        }
+
         @include screen(sm) {
-            width: 300px;
-            height: 350px;
+            // right: 50px;
+            // width: 300px;
         }
     }
 
@@ -436,17 +441,9 @@ body {
     left: 170px;
     top: 330px;
     max-width: 500px;
-    display: flex;
-    flex-wrap: wrap;
 
     @include screen(lg) {
-        top: 700px;
-        left: 160px;
-    }
-
-    @include screen(sm) {
-        top: 700px;
-        left: 40px;
+        top: 500px
     }
 
     input {
@@ -456,31 +453,26 @@ body {
         outline: none;
         background: #eee;
         border: 1px solid #dadada;
-        @include screen(lg) {
-            width: 108px;
-        }
 
         @include screen(sm) {
             padding: 10px 10px;
             margin-top: 10px;
-            width: 90px;
         }
     }
 
     button {
-        margin-top: 30px;
-        width: 108px;
+        width: 100px;
         padding: 10px 15px;
         background: #fd3a3a;
         border: none;
         color: #fff;
         font-weight: 500;
-        
-        @include screen(sm) {
-            padding: 10px 10px;
-            margin-top: 10px;
-            width: 90px;
-        }
+    }
+
+    @include screen(sm) {
+        max-width: 300px;
+        margin-top: 60px;
+        left: 50px;
     }
 }
 
