@@ -293,6 +293,28 @@ body {
     height: 350px;
   }
 }
+.timer .player-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer .player-row > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 99px;
+  background: rgb(63, 145, 226);
+  color: #dadada;
+  transition: all 0.25s ease;
+}
+.timer .player-row > i:hover {
+  background: rgba(63, 145, 226, 0.8);
+}
 .timer .player-box {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 25px;
