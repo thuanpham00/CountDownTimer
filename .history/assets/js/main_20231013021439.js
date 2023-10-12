@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
             this.timerInputForm(e)
         );
     }
-    new TimerDate(); // khởi tạo đối tượng
+    new TimerDate();
     TimerDate.prototype.setTimer = function (
         dayInput,
         monthInput,
@@ -365,7 +365,7 @@ window.addEventListener("load", function () {
         this.listMusic = document.querySelector(".player-list__wrapper");
         setTimeout(() => this.printListMusic(), 200);
     }
-    new MusicMp3(); // khởi tạo đối tượng
+    new MusicMp3(); // nhớ tạo 
     MusicMp3.prototype.playMusic = function () {
         this.audio.setAttribute(
             "src",

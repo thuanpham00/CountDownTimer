@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
             this.timerInputForm(e)
         );
     }
-    new TimerDate(); // khởi tạo đối tượng
+    new TimerDate();
     TimerDate.prototype.setTimer = function (
         dayInput,
         monthInput,
@@ -101,7 +101,6 @@ window.addEventListener("load", function () {
 
     // xử lý nhạc
     function MusicMp3() {
-        // this đại diện cho MusicMp3
         this.container = document.querySelector(".songs-container");
         this.currentSongIndex = 0; // Đặt chỉ mục ban đầu thành 0 hoặc chỉ mục của bài hát mặc định
         const self = this; // để lưu trữ tham chiếu đến đối tượng MusicMp3 (this).
@@ -335,10 +334,9 @@ window.addEventListener("load", function () {
 
         // dùng arrow-function để gọi hàm; 
         // giá trị this nó sẽ trỏ đến MusicMp3
-        // còn nếu gọi hàm như bình thường 
+        // còn nếu gọi như bình thường 
         // this.btnPlay.addEventListener("click", function() {
-        //      this.playMusic(); // thì giá trị this ở đây có thể bị thay đổi và this nó trỏ đến this.btnPlay 
-        // thay vì nó trỏ đến MusicMp3
+        //   
         // }); 
          
         this.btnPlay.addEventListener("click", (e) => this.playMusic());
@@ -365,7 +363,7 @@ window.addEventListener("load", function () {
         this.listMusic = document.querySelector(".player-list__wrapper");
         setTimeout(() => this.printListMusic(), 200);
     }
-    new MusicMp3(); // khởi tạo đối tượng
+    new MusicMp3();
     MusicMp3.prototype.playMusic = function () {
         this.audio.setAttribute(
             "src",

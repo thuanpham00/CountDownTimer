@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
             this.timerInputForm(e)
         );
     }
-    new TimerDate(); // khởi tạo đối tượng
+    new TimerDate();
     TimerDate.prototype.setTimer = function (
         dayInput,
         monthInput,
