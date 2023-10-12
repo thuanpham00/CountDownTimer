@@ -114,6 +114,12 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon1.png",
                 },
                 {
+                    name: "Anh chưa thương em đến vậy đâu",
+                    singer: "Lady mây",
+                    path: "./assets/files/anh-chua-thuong-em-den-vay-dau.mp3",
+                    img: "./assets/img/icon2.png",
+                },
+                {
                     name: "Anh đã ổn hơn",
                     singer: "MCK",
                     path: "./assets/files/anh-da-on-hon.mp3",
