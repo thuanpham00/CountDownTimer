@@ -400,8 +400,8 @@ body {
         border-radius: inherit;
     }
 
-    .is-playing {
-        animation: rotate 1s forwards infinite linear;
+    .player-image.is-playing {
+        animation: rotate 10s forwards infinite linear;
     }
 
     @keyframes rotate {
@@ -585,19 +585,11 @@ body {
     
     &.active {
         color:#fd3a3a;
-        font-style: italic;
-        font-weight: 600;
+        
     }
 }
 
 .nameSinger {
     margin-top: 5px;
     font-size: 1.5rem;
-
-    &.active {
-        color:#fd3a3a;
-        font-weight: 500;
-        font-style: italic;
-
-    }
 }

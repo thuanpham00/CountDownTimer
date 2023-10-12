@@ -110,199 +110,199 @@ window.addEventListener("load", function () {
                     name: "Ai mới là kẻ xấu xa",
                     singer: "MCK",
                     path: "./assets/files/ai-moi-la-ke-xau-xa.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Anh đã ổn hơn",
                     singer: "MCK",
                     path: "./assets/files/anh-da-on-hon.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Anh luôn như vây",
                     singer: "Bray",
                     path: "./assets/files/anh-luon-nhu-vay.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Bạn đời",
                     singer: "Karik",
                     path: "./assets/files/ban-doi.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Chỉ một đêm nữa thôi",
                     singer: "MCK",
                     path: "./assets/files/chi-mot-dem-nua-thoi.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Cỏ may",
                     singer: "Hào",
                     path: "./assets/files/co-may.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Con kể ba nghe",
                     singer: "Obito",
                     path: "./assets/files/con-ke-ba-nghe.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Dalat-mango",
                     singer: "PC",
                     path: "./assets/files/dalat-mango.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Đầu đường xó chợ",
                     singer: "Obito",
                     path: "./assets/files/dau-duong-xo-cho.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Giờ thì ai cười",
                     singer: "HieuThuHai",
                     path: "./assets/files/gio-thi-ai-cuoi.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Khi cơn mơ đang dần phai",
                     singer: "Tez",
                     path: "./assets/files/khi-con-mo-dang-dan-phai.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Lần cuối",
                     singer: "Ngọt",
                     path: "./assets/files/lan-cuoi.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Last night",
                     singer: "Hazel",
                     path: "./assets/files/last-night.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Lệ lưu ly",
                     singer: "Vũ Phụng Tiên - DT",
                     path: "./assets/files/le-luu-ly.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Miên man",
                     singer: "Minh Huy",
                     path: "./assets/files/mien-man.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Mưa cứ rơi",
                     singer: "Wrxdie",
                     path: "./assets/files/mua-cu-roi.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Nếu một ngày chúng ta không còn gặp",
                     singer: "Dick",
                     path: "./assets/files/neu-mot-ngay-chung-ta-khong-con-gap.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Nghe như tình yêu",
                     singer: "MCK remake",
                     path: "./assets/files/nghe-nhu-tinh-yeu-mck.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Quay lại giường đi em",
                     singer: "Hà lê",
                     path: "./assets/files/quay-lai-giuong-di-em.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Rồi một ngày",
                     singer: "Dewie",
                     path: "./assets/files/roi-mot-ngay.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Sinh nhật mùa thu",
                     singer: "Dewie",
                     path: "./assets/files/sinh-nhat-mua-thu.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Tại vì sao",
                     singer: "MCK",
                     path: "./assets/files/tai-vi-sao.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Tháng 11 có em",
                     singer: "Thanh Hòa",
                     path: "./assets/files/thang-11-co-em.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Tình cờ yêu em",
                     singer: "Kunn Đức Nam",
                     path: "./assets/files/tinh-co-yeu-em.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Tỉnh thức sau giấc ngủ đông",
                     singer: "Bray",
                     path: "./assets/files/tinh-giac-sau-mua-dong.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Trên những đám mây",
                     singer: "Chillies",
                     path: "./assets/files/tren-nhung-dam-may.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Vết thương",
                     singer: "Fishy",
                     path: "./assets/files/vet-thuong.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Vì mẹ anh bắt chia tay",
                     singer: "Karik - Miu lê",
                     path: "./assets/files/vi-me-anh-bat-chia-tay.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Vô điều kiện",
                     singer: "Obito",
                     path: "./assets/files/vo-dieu-kien.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "We go hard",
                     singer: "Rap Việt",
                     path: "./assets/files/we-go-hard.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Welcome to my show",
                     singer: "Bray",
                     path: "./assets/files/welcome-to-my-show.mp3",
-                    img: "./assets/img/icon1.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Xuất phát điểm",
                     singer: "Obito",
                     path: "./assets/files/xuat-phat-diem.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/mthis.png",
                 },
                 {
                     name: "Yêu em dại khờ",
                     singer: "Lou hoàng",
                     path: "./assets/files/yeu-em-dai-kho.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/mthis.png",
                 },
                 // Thêm nhiều bài hát khác ở đây
             ],
@@ -312,7 +312,7 @@ window.addEventListener("load", function () {
                 const htmls = `<div class="song" data-index="${self.currentSongIndex}">
                         <h2 class="nameSong">${song.name}</h2>
                         <p>${song.singer}</p>
-                        <img src="${song.img}" alt="${song.name}" class="img imgPlayerBox" />
+                        <img src="${song.img}" alt="${song.name}" class="img" />
                         <audio src="${song.path}" controls id="song" style="display: none"></audio>
                     </div>
                 `;
@@ -358,6 +358,7 @@ window.addEventListener("load", function () {
     }
     new MusicMp3();
     MusicMp3.prototype.playMusic = function () {
+        const img = document.querySelector(".img")
         this.audio.setAttribute(
             "src",
             `${this.listMusicRender.songs[this.currentSongIndex].path}`
@@ -367,11 +368,14 @@ window.addEventListener("load", function () {
             this.btnPlay.classList.remove("fa-pause");
             this.btnPlay.classList.add("fa-play");
             this.audio.pause();
+            img.classList.add("is-playing")
         } else {
             this.playing = true;
             this.btnPlay.classList.remove("fa-play");
             this.btnPlay.classList.add("fa-pause");
             this.audio.play();
+            img.classList.add("is-playing")
+
         }
     };
 

@@ -302,7 +302,7 @@ window.addEventListener("load", function () {
                     name: "Yêu em dại khờ",
                     singer: "Lou hoàng",
                     path: "./assets/files/yeu-em-dai-kho.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/icon.png",
                 },
                 // Thêm nhiều bài hát khác ở đây
             ],

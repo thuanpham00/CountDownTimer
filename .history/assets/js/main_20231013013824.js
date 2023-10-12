@@ -296,13 +296,13 @@ window.addEventListener("load", function () {
                     name: "Xuất phát điểm",
                     singer: "Obito",
                     path: "./assets/files/xuat-phat-diem.mp3",
-                    img: "./assets/img/icon2.png",
+                    img: "./assets/img/icon.png",
                 },
                 {
                     name: "Yêu em dại khờ",
                     singer: "Lou hoàng",
                     path: "./assets/files/yeu-em-dai-kho.mp3",
-                    img: "./assets/img/icon3.png",
+                    img: "./assets/img/icon.png",
                 },
                 // Thêm nhiều bài hát khác ở đây
             ],

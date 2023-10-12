@@ -396,8 +396,8 @@ body {
   object-fit: cover;
   border-radius: inherit;
 }
-.timer .player-image.is-playing {
-  animation: rotate 10s forwards infinite linear;
+.timer .is-playing {
+  animation: rotate 1s forwards infinite linear;
 }
 @keyframes rotate {
   to {
@@ -562,10 +562,20 @@ body {
 .nameSong {
   font-size: 1.6rem;
 }
+.nameSong.active {
+  color: #fd3a3a;
+  font-style: italic;
+  font-weight: 600;
+}
 
 .nameSinger {
   margin-top: 5px;
   font-size: 1.5rem;
+}
+.nameSinger.active {
+  color: #fd3a3a;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */

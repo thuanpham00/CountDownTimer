@@ -400,8 +400,8 @@ body {
         border-radius: inherit;
     }
 
-    .is-playing {
-        animation: rotate 1s forwards infinite linear;
+    .player-image.is-playing {
+        animation: rotate 10s forwards infinite linear;
     }
 
     @keyframes rotate {
