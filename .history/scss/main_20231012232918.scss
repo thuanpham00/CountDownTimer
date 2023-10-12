@@ -503,16 +503,8 @@ body {
     }
 }
 
-
 .form-timer {
-    &__wrapper {
-        height: 200px;
-
-        @include screen(sm) {
-            height: 150px;
-        }
-    }
-
+    margin-bottom: 150px;
     position: absolute;
     left: 170px;
     top: 350px;

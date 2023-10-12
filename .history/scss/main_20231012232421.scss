@@ -168,6 +168,7 @@ $container-color: #0a6cf1;
 $container-padding: 30px 20px 10px 20px;
 
 body {
+    height: 1200px;
     background: url("../img/background-4.jpg") repeat fixed center;
     user-select: none;
 }
@@ -200,11 +201,10 @@ body {
 
         @include screen(lg) {
             margin-top: 20px;
-            min-width: 400px;
+            min-width: 500px;
         }
 
         @include screen(sm) {
-            margin-top: 10px;
             min-width: 300px;
         }
     }
@@ -311,10 +311,10 @@ body {
         &__title {
             margin-left: -20px;
             text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
-                serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 3rem;
             margin-bottom: 20px;
+            
         }
 
         &__wrapper {
@@ -503,16 +503,7 @@ body {
     }
 }
 
-
 .form-timer {
-    &__wrapper {
-        height: 200px;
-
-        @include screen(sm) {
-            height: 150px;
-        }
-    }
-
     position: absolute;
     left: 170px;
     top: 350px;
@@ -521,16 +512,13 @@ body {
     flex-wrap: wrap;
 
     @include screen(lg) {
-        max-width: 400px;
         top: 1100px;
-        left: 190px;
+        left: 160px;
     }
 
     @include screen(sm) {
-        max-width: 400px;
-
-        top: 1120px;
-        left: 30px;
+        top: 700px;
+        left: 40px;
     }
 
     input {
@@ -541,7 +529,7 @@ body {
         background: #eee;
         border: 1px solid #dadada;
         @include screen(lg) {
-            width: 90px;
+            width: 108px;
         }
 
         @include screen(sm) {
