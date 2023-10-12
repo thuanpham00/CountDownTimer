@@ -108,6 +108,12 @@ window.addEventListener("load", function () {
         this.listMusicRender = {
             songs: [
                 {
+                    name: "24h",
+                    singer: "Lyly ft Magazine",
+                    path: "./assets/files/24h.mp3",
+                    img: "./assets/img/icon1.png",
+                },
+                {
                     name: "Ai mới là kẻ xấu xa",
                     singer: "MCK",
                     path: "./assets/files/ai-moi-la-ke-xau-xa.mp3",
@@ -132,6 +138,12 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon3.png",
                 },
                 {
+                    name: "Anh thương em nhất mà",
+                    singer: "Lã. x Log x TiB",
+                    path: "./assets/files/anh-thuong-em-nhat-ma.mp3",
+                    img: "./assets/img/icon3.png",
+                },
+                {
                     name: "Bạn đời",
                     singer: "Karik",
                     path: "./assets/files/ban-doi.mp3",
@@ -141,6 +153,12 @@ window.addEventListener("load", function () {
                     name: "Chỉ một đêm nữa thôi",
                     singer: "MCK",
                     path: "./assets/files/chi-mot-dem-nua-thoi.mp3",
+                    img: "./assets/img/icon2.png",
+                },
+                {
+                    name: "Chuyện đôi ta",
+                    singer: "Emcee L (Da LAB) ft Muộii",
+                    path: "./assets/files/chuyen-doi-ta.mp3",
                     img: "./assets/img/icon2.png",
                 },
                 {
@@ -189,6 +207,12 @@ window.addEventListener("load", function () {
                     name: "Khi cơn mơ đang dần phai",
                     singer: "Tez",
                     path: "./assets/files/khi-con-mo-dang-dan-phai.mp3",
+                    img: "./assets/img/icon2.png",
+                },
+                {
+                    name: "Làm gì có ai thương em",
+                    singer: "Tóc Tiên x Touliver x Rap $onday",
+                    path: "./assets/files/lam-gi-co-ai-thuong-em.mp3",
                     img: "./assets/img/icon2.png",
                 },
                 {
@@ -276,6 +300,12 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon1.png",
                 },
                 {
+                    name: "Tâm ý",
+                    singer: "1nG",
+                    path: "./assets/files/tam-y.mp3",
+                    img: "./assets/img/icon1.png",
+                },
+                {
                     name: "Tháng 11 có em",
                     singer: "Thanh Hòa",
                     path: "./assets/files/thang-11-co-em.mp3",
@@ -339,6 +369,12 @@ window.addEventListener("load", function () {
                     name: "Yêu em dại khờ",
                     singer: "Lou hoàng",
                     path: "./assets/files/yeu-em-dai-kho.mp3",
+                    img: "./assets/img/icon3.png",
+                },
+                {
+                    name: "Yêu người có ước mơ",
+                    singer: "Bùi Trường Linh",
+                    path: "./assets/files/yeu-nguoi-co-uoc-mo.mp3",
                     img: "./assets/img/icon3.png",
                 },
                 // Thêm nhiều bài hát khác ở đây
