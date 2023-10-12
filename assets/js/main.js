@@ -168,9 +168,21 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon3.png",
                 },
                 {
+                    name: "Don't côi",
+                    singer: "Ronboogz",
+                    path: "./assets/files/Dont-coi.mp3",
+                    img: "./assets/img/icon3.png",
+                },
+                {
                     name: "Giờ thì ai cười",
                     singer: "HieuThuHai",
                     path: "./assets/files/gio-thi-ai-cuoi.mp3",
+                    img: "./assets/img/icon1.png",
+                },
+                {
+                    name: "Hai đứa nhóc",
+                    singer: "Ronboogz",
+                    path: "./assets/files/hai-dua-nhoc.mp3",
                     img: "./assets/img/icon1.png",
                 },
                 {
@@ -186,6 +198,12 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon3.png",
                 },
                 {
+                    name: "Lan man",
+                    singer: "Ronboogz",
+                    path: "./assets/files/lan-man.mp3",
+                    img: "./assets/img/icon3.png",
+                },
+                {
                     name: "Last night",
                     singer: "Hazel",
                     path: "./assets/files/last-night.mp3",
@@ -195,6 +213,12 @@ window.addEventListener("load", function () {
                     name: "Lệ lưu ly",
                     singer: "Vũ Phụng Tiên - DT",
                     path: "./assets/files/le-luu-ly.mp3",
+                    img: "./assets/img/icon2.png",
+                },
+                {
+                    name: "Lời không nói",
+                    singer: "Ronboogz",
+                    path: "./assets/files/loi-khong-noi.mp3",
                     img: "./assets/img/icon2.png",
                 },
                 {
@@ -231,6 +255,12 @@ window.addEventListener("load", function () {
                     name: "Rồi một ngày",
                     singer: "Dewie",
                     path: "./assets/files/roi-mot-ngay.mp3",
+                    img: "./assets/img/icon2.png",
+                },
+                {
+                    name: "Sau cơn mưa",
+                    singer: "Ryder",
+                    path: "./assets/files/sau-con-mua.mp3",
                     img: "./assets/img/icon2.png",
                 },
                 {
