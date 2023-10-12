@@ -449,6 +449,7 @@ window.addEventListener("load", function () {
                 console.log(pathMusic);
                 that2.currentSongIndex = pathMusic;
                 that2.playSelectedSong(that2.currentSongIndex);
+                // this.playSelectedSong()
             })
         );
     };
