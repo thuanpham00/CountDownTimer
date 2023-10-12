@@ -109,7 +109,7 @@ window.addEventListener("load", function () {
                 {
                     name: "Ai mới là kẻ xấu xa",
                     singer: "MCK",
-                    path: "./assets/files/ai-moi-la-ke-xau-xa.mp3",
+                    path: "./assets/files/ai-moi-la-ke-xau.mp3",
                     img: "./assets/img/mthis.png",
                 },
                 {

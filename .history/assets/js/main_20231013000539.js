@@ -107,9 +107,9 @@ window.addEventListener("load", function () {
         this.listMusicRender = {
             songs: [
                 {
-                    name: "Ai mới là kẻ xấu xa",
+                    name: "Anh đã ổn hơn",
                     singer: "MCK",
-                    path: "./assets/files/ai-moi-la-ke-xau-xa.mp3",
+                    path: "./assets/files/anh-da-on-hon.mp3",
                     img: "./assets/img/mthis.png",
                 },
                 {
