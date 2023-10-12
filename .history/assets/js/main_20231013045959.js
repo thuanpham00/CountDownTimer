@@ -545,7 +545,7 @@ window.addEventListener("load", function () {
         });
         const itemMusicView = document.querySelectorAll(".itemMusicView");
         [...itemMusicView].forEach((item) =>
-            item.addEventListener("click", function () {
+            item.addEventListener("click", function (e) {
                 [...itemMusicView].forEach((item) => {
                     const nameSong = item.querySelector(".nameSong");
                     const singerSong = item.querySelector(".nameSinger");

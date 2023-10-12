@@ -601,7 +601,7 @@ body {
     }
 }
 
-.itemMusicView {
+.itemMusicView:first-child {
     .nameSong:first-child {
         &.active {
             color: #fd3a3a;

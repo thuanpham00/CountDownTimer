@@ -582,9 +582,9 @@ body {
 
 .nameSong {
     font-size: 1.6rem;
-
+    
     &.active {
-        color: #fd3a3a;
+        color:#fd3a3a;
         font-style: italic;
         font-weight: 600;
     }
@@ -595,18 +595,13 @@ body {
     font-size: 1.5rem;
 
     &.active {
-        color: #fd3a3a;
+        color:#fd3a3a;
         font-weight: 500;
         font-style: italic;
+
     }
 }
 
-.itemMusicView {
-    .nameSong:first-child {
-        &.active {
-            color: #fd3a3a;
-            font-weight: 500;
-            font-style: italic;
-        }
-    }
+.itemMusicView:first-child {
+    
 }

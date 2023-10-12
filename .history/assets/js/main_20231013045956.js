@@ -545,7 +545,7 @@ window.addEventListener("load", function () {
         });
         const itemMusicView = document.querySelectorAll(".itemMusicView");
         [...itemMusicView].forEach((item) =>
-            item.addEventListener("click", function () {
+            item.addEventListener("click", function (e) {
                 [...itemMusicView].forEach((item) => {
                     const nameSong = item.querySelector(".nameSong");
                     const singerSong = item.querySelector(".nameSinger");
@@ -562,7 +562,7 @@ window.addEventListener("load", function () {
                 const imgMusic1 = item.querySelector(".img.img-2");
                 nameSong1.classList.add("active");
                 singerSong1.classList.add("active");
-                imgMusic1.classList.add("is-playing");
+                imgMusic.classList.add("is-playing");
             })
         );
     };

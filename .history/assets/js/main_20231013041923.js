@@ -405,14 +405,14 @@ window.addEventListener("load", function () {
         this.playing = false;
         this.songs = this.listMusicRender.songs;
 
-        // dùng arrow-function để gọi hàm;
+        // dùng arrow-function để gọi hàm; 
         // giá trị this nó sẽ trỏ đến MusicMp3
-        // còn nếu gọi hàm như bình thường
+        // còn nếu gọi hàm như bình thường 
         // this.btnPlay.addEventListener("click", function() {
-        //      this.playMusic(); // thì giá trị this ở đây có thể bị thay đổi và this nó trỏ đến this.btnPlay
+        //      this.playMusic(); // thì giá trị this ở đây có thể bị thay đổi và this nó trỏ đến this.btnPlay 
         // thay vì nó trỏ đến MusicMp3
-        // });
-
+        // }); 
+         
         this.btnPlay.addEventListener("click", (e) => this.playMusic());
 
         this.btnNext.addEventListener("click", () => this.handleChangeMusic(1));
@@ -457,6 +457,17 @@ window.addEventListener("load", function () {
     };
 
     MusicMp3.prototype.handleChangeMusic = function (dir) {
+        const indexMusic = document.querySelectorAll(".itemMusicView");
+        [...indexMusic].forEach(item => {
+            const index = item.dataset.index
+            index.findIndex(item => {
+                if(item == this.currentSongIndex) {
+                    nameSong.classList.add("active");
+                    singerSong.classList.add("active");
+                    imgMusic.classList.add("is-playing");
+                }
+            })
+        })
         if (dir === 1) {
             this.currentSongIndex++;
             if (this.currentSongIndex >= this.songs.length) {
@@ -470,26 +481,6 @@ window.addEventListener("load", function () {
             }
             this.playSelectedSong(this.currentSongIndex);
         }
-
-        const indexMusic = document.querySelectorAll(".itemMusicView");
-        [...indexMusic].forEach((item, index) => {
-            if (index == this.currentSongIndex) {
-                [...indexMusic].forEach((item) => {
-                    const nameSong = item.querySelector(".nameSong");
-                    const singerSong = item.querySelector(".nameSinger");
-                    const imgMusic = item.querySelector(".img.img-2");
-                    nameSong.classList.remove("active");
-                    singerSong.classList.remove("active");
-                    imgMusic.classList.remove("is-playing");
-                });
-                const nameSong = item.querySelector(".nameSong");
-                const singerSong = item.querySelector(".nameSinger");
-                const imgMusic = item.querySelector(".img.img-2");
-                nameSong.classList.add("active");
-                singerSong.classList.add("active");
-                imgMusic.classList.add("is-playing");
-            }
-        });
     };
 
     MusicMp3.prototype.playSelectedSong = function (songIndex) {
@@ -545,24 +536,24 @@ window.addEventListener("load", function () {
         });
         const itemMusicView = document.querySelectorAll(".itemMusicView");
         [...itemMusicView].forEach((item) =>
-            item.addEventListener("click", function () {
-                [...itemMusicView].forEach((item) => {
-                    const nameSong = item.querySelector(".nameSong");
-                    const singerSong = item.querySelector(".nameSinger");
-                    const imgMusic = item.querySelector(".img.img-2");
-                    nameSong.classList.remove("active");
-                    singerSong.classList.remove("active");
-                    imgMusic.classList.remove("is-playing");
-                });
+            item.addEventListener("click", function (e) {
                 const pathMusic = item.dataset.index;
                 that2.currentSongIndex = pathMusic;
                 that2.playSelectedSong(that2.currentSongIndex);
-                const nameSong1 = item.querySelector(".nameSong");
-                const singerSong1 = item.querySelector(".nameSinger");
-                const imgMusic1 = item.querySelector(".img.img-2");
-                nameSong1.classList.add("active");
-                singerSong1.classList.add("active");
-                imgMusic1.classList.add("is-playing");
+                const nameSong = item.querySelector(".nameSong");
+                const singerSong = item.querySelector(".nameSinger");
+                const imgMusic = item.querySelector(".img.img-2");
+                nameSong.classList.add("active");
+                singerSong.classList.add("active");
+                imgMusic.classList.add("is-playing");
+
+                [...itemMusicView].forEach((item) =>
+                    item.addEventListener("click", function () {
+                        nameSong.classList.remove("active");
+                        singerSong.classList.remove("active");
+                        imgMusic.classList.remove("is-playing");
+                    })
+                );
             })
         );
     };

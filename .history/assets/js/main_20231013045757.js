@@ -545,11 +545,11 @@ window.addEventListener("load", function () {
         });
         const itemMusicView = document.querySelectorAll(".itemMusicView");
         [...itemMusicView].forEach((item) =>
-            item.addEventListener("click", function () {
+            item.addEventListener("click", function (e) {
+                const nameSong = item.querySelector(".nameSong");
+                const singerSong = item.querySelector(".nameSinger");
+                const imgMusic = item.querySelector(".img.img-2");
                 [...itemMusicView].forEach((item) => {
-                    const nameSong = item.querySelector(".nameSong");
-                    const singerSong = item.querySelector(".nameSinger");
-                    const imgMusic = item.querySelector(".img.img-2");
                     nameSong.classList.remove("active");
                     singerSong.classList.remove("active");
                     imgMusic.classList.remove("is-playing");
@@ -557,12 +557,9 @@ window.addEventListener("load", function () {
                 const pathMusic = item.dataset.index;
                 that2.currentSongIndex = pathMusic;
                 that2.playSelectedSong(that2.currentSongIndex);
-                const nameSong1 = item.querySelector(".nameSong");
-                const singerSong1 = item.querySelector(".nameSinger");
-                const imgMusic1 = item.querySelector(".img.img-2");
-                nameSong1.classList.add("active");
-                singerSong1.classList.add("active");
-                imgMusic1.classList.add("is-playing");
+                nameSong.classList.add("active");
+                singerSong.classList.add("active");
+                imgMusic.classList.add("is-playing");
             })
         );
     };

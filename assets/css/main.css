@@ -578,4 +578,10 @@ body {
   font-style: italic;
 }
 
+.itemMusicView .nameSong:first-child.active {
+  color: #fd3a3a;
+  font-weight: 500;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=main.css.map */
