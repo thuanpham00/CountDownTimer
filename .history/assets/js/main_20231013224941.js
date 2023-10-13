@@ -530,10 +530,10 @@ window.addEventListener("load", function () {
         const itemMusic2 = document.querySelectorAll(".itemMusicView");
         [...itemMusic2].forEach((item, index) => {
             if (this.currentSongIndex == index) {
+                const nameSongItemMusic2 = item.querySelector(".nameSong"); // truy cấp thẻ con bên trong nó
+                const singerSongItemMusic2 = item.querySelector(".nameSinger");
+                const imgSongItemMusic = item.querySelector(".img.img-2");
                 [...itemMusic2].forEach((item) => {
-                    const nameSongItemMusic2 = item.querySelector(".nameSong"); // truy cấp thẻ con bên trong nó
-                    const singerSongItemMusic2 = item.querySelector(".nameSinger");
-                    const imgSongItemMusic = item.querySelector(".img.img-2");
                     nameSongItemMusic2.classList.remove("active");
                     singerSongItemMusic2.classList.remove("active");
                     imgSongItemMusic.classList.remove("is-playing");
@@ -586,4 +586,5 @@ window.addEventListener("load", function () {
         );
     };
 });
+
 // sử dụng constructor function kèm với prototype

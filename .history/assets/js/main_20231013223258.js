@@ -439,6 +439,7 @@ window.addEventListener("load", function () {
     }
     new MusicMp3(); // khởi tạo đối tượng
     MusicMp3.prototype.playMusic = function () {
+        const isPlaying = document.querySelector("")
         this.audio.setAttribute(
             "src",
             `${this.listMusicRender.songs[this.currentSongIndex].path}`
@@ -528,24 +529,24 @@ window.addEventListener("load", function () {
         this.currentSongIndex = random;
         this.playSelectedSong(this.currentSongIndex);
         const itemMusic2 = document.querySelectorAll(".itemMusicView");
-        [...itemMusic2].forEach((item, index) => {
-            if (this.currentSongIndex == index) {
-                [...itemMusic2].forEach((item) => {
-                    const nameSongItemMusic2 = item.querySelector(".nameSong"); // truy cấp thẻ con bên trong nó
-                    const singerSongItemMusic2 = item.querySelector(".nameSinger");
-                    const imgSongItemMusic = item.querySelector(".img.img-2");
-                    nameSongItemMusic2.classList.remove("active");
-                    singerSongItemMusic2.classList.remove("active");
-                    imgSongItemMusic.classList.remove("is-playing");
-                });
-                const nameSongItemMusic3 = item.querySelector(".nameSong");
-                const singerSongItemMusic3 = item.querySelector(".nameSinger");
-                const imgSongItemMusic3 = item.querySelector(".img.img-2");
-                nameSongItemMusic3.classList.add("active");
-                singerSongItemMusic3.classList.add("active");
-                imgSongItemMusic3.classList.add("is-playing");
-            }
-        });
+        [...itemMusic2].forEach((item) =>
+            item.addEventListener("click", function () {
+                [...itemMusic2].forEach(item => {
+                    const nameSong = item.querySelector(".nameSong");
+                    const singerSong = item.querySelector(".nameSinger");
+                    const imgMusic = item.querySelector(".img.img-2");
+                    nameSong.classList.remove("active");
+                    singerSong.classList.remove("active");
+                    imgMusic.classList.remove("is-playing");
+                })
+                const nameSong1 = item.querySelector(".nameSong");
+                const singerSong1 = item.querySelector(".nameSinger");
+                const imgMusic1 = item.querySelector(".img.img-2");
+                nameSong1.classList.add("active");
+                singerSong1.classList.add("active");
+                imgMusic1.classList.add("is-playing");
+            })
+        );
     };
 
     MusicMp3.prototype.printListMusic = function () {
@@ -586,4 +587,5 @@ window.addEventListener("load", function () {
         );
     };
 });
+
 // sử dụng constructor function kèm với prototype

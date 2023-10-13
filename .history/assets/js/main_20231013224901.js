@@ -586,4 +586,5 @@ window.addEventListener("load", function () {
         );
     };
 });
+
 // sử dụng constructor function kèm với prototype

@@ -541,9 +541,9 @@ window.addEventListener("load", function () {
                 const nameSongItemMusic3 = item.querySelector(".nameSong");
                 const singerSongItemMusic3 = item.querySelector(".nameSinger");
                 const imgSongItemMusic3 = item.querySelector(".img.img-2");
-                nameSongItemMusic3.classList.add("active");
-                singerSongItemMusic3.classList.add("active");
-                imgSongItemMusic3.classList.add("is-playing");
+                nameSongItemMusic2.classList.add("active");
+                singerSongItemMusic2.classList.add("active");
+                imgSongItemMusic.classList.add("is-playing");
             }
         });
     };
@@ -586,4 +586,5 @@ window.addEventListener("load", function () {
         );
     };
 });
+
 // sử dụng constructor function kèm với prototype

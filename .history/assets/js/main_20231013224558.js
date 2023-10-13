@@ -531,7 +531,7 @@ window.addEventListener("load", function () {
         [...itemMusic2].forEach((item, index) => {
             if (this.currentSongIndex == index) {
                 [...itemMusic2].forEach((item) => {
-                    const nameSongItemMusic2 = item.querySelector(".nameSong"); // truy cấp thẻ con bên trong nó
+                    const nameSongItemMusic2 = item.querySelector(".nameSong");
                     const singerSongItemMusic2 = item.querySelector(".nameSinger");
                     const imgSongItemMusic = item.querySelector(".img.img-2");
                     nameSongItemMusic2.classList.remove("active");
@@ -586,4 +586,5 @@ window.addEventListener("load", function () {
         );
     };
 });
+
 // sử dụng constructor function kèm với prototype

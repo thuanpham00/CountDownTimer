@@ -543,7 +543,7 @@ window.addEventListener("load", function () {
                 const imgSongItemMusic3 = item.querySelector(".img.img-2");
                 nameSongItemMusic3.classList.add("active");
                 singerSongItemMusic3.classList.add("active");
-                imgSongItemMusic3.classList.add("is-playing");
+                imgSongItemMusic.classList.add("is-playing");
             }
         });
     };
@@ -586,4 +586,5 @@ window.addEventListener("load", function () {
         );
     };
 });
+
 // sử dụng constructor function kèm với prototype
