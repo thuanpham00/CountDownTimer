@@ -450,6 +450,9 @@ window.addEventListener("load", function () {
             `${this.listMusicRender.songs[this.currentSongIndex].path}`
         );
         if (this.playing) {
+            const currentTimeBefore = this.audio.currentTime;
+            this.audio.currentTime = currentTimeBefore;
+            this.bar.value = currentTimeBefore
             this.playing = false;
             this.btnPlay.classList.remove("fa-pause");
             this.btnPlay.classList.add("fa-play");

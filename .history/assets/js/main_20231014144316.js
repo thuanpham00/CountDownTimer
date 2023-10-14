@@ -454,6 +454,7 @@ window.addEventListener("load", function () {
             this.btnPlay.classList.remove("fa-pause");
             this.btnPlay.classList.add("fa-play");
             this.audio.pause();
+            this.checkTimer()
         } else {
             this.playing = true;
             this.btnPlay.classList.remove("fa-play");
@@ -538,8 +539,7 @@ window.addEventListener("load", function () {
             if (this.currentSongIndex == index) {
                 [...itemMusic2].forEach((item) => {
                     const nameSongItemMusic2 = item.querySelector(".nameSong"); // truy cấp thẻ con bên trong nó
-                    const singerSongItemMusic2 =
-                        item.querySelector(".nameSinger");
+                    const singerSongItemMusic2 = item.querySelector(".nameSinger");
                     const imgSongItemMusic = item.querySelector(".img.img-2");
                     nameSongItemMusic2.classList.remove("active");
                     singerSongItemMusic2.classList.remove("active");
