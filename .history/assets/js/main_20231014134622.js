@@ -133,9 +133,9 @@ window.addEventListener("load", function () {
                 },
                 {
                     name: "Anh đang đi việc",
-                    singer: "Lil van",
-                    path: "./assets/files/anh-dang-di-viec.mp3",
-                    img: "./assets/img/icon3.png",
+                    singer: "Li van",
+                    path: "./assets/files/anh-da-on-hon.mp3",
+                    img: "./assets/img/icon2.png",
                 },
                 {
                     name: "Anh luôn như vây",
