@@ -114,12 +114,6 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon1.png",
                 },
                 {
-                    name: "Ai cũng phải bắt đầu từ đâu đó",
-                    singer: "HieuThuHai",
-                    path: "./assets/files/ai-cung-phai-bat-dau-tu-dau-do.mp3",
-                    img: "./assets/img/icon1.png",
-                },
-                {
                     name: "Ai mới là kẻ xấu xa",
                     singer: "MCK",
                     path: "./assets/files/ai-moi-la-ke-xau-xa.mp3",
@@ -204,12 +198,6 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon3.png",
                 },
                 {
-                    name: "Exit-sign",
-                    singer: "HieuThuHai",
-                    path: "./assets/files/exit-sign.mp3",
-                    img: "./assets/img/icon3.png",
-                },
-                {
                     name: "Giờ thì ai cười",
                     singer: "HieuThuHai",
                     path: "./assets/files/gio-thi-ai-cuoi.mp3",
@@ -289,8 +277,8 @@ window.addEventListener("load", function () {
                 },
                 {
                     name: "No love no life",
-                    singer: "Hieuthuhai",
-                    path: "./assets/files/no-love-no-life.mp3",
+                    singer: "MCK remake",
+                    path: "./assets/files/nghe-nhu-tinh-yeu-mck.mp3",
                     img: "./assets/img/icon3.png",
                 },
                 {

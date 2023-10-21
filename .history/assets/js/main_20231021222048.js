@@ -206,7 +206,7 @@ window.addEventListener("load", function () {
                 {
                     name: "Exit-sign",
                     singer: "HieuThuHai",
-                    path: "./assets/files/exit-sign.mp3",
+                    path: "./assets/files/Dont-coi.mp3",
                     img: "./assets/img/icon3.png",
                 },
                 {

@@ -114,12 +114,6 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon1.png",
                 },
                 {
-                    name: "Ai cũng phải bắt đầu từ đâu đó",
-                    singer: "HieuThuHai",
-                    path: "./assets/files/ai-cung-phai-bat-dau-tu-dau-do.mp3",
-                    img: "./assets/img/icon1.png",
-                },
-                {
                     name: "Ai mới là kẻ xấu xa",
                     singer: "MCK",
                     path: "./assets/files/ai-moi-la-ke-xau-xa.mp3",
@@ -201,12 +195,6 @@ window.addEventListener("load", function () {
                     name: "Don't côi",
                     singer: "Ronboogz",
                     path: "./assets/files/Dont-coi.mp3",
-                    img: "./assets/img/icon3.png",
-                },
-                {
-                    name: "Exit-sign",
-                    singer: "HieuThuHai",
-                    path: "./assets/files/exit-sign.mp3",
                     img: "./assets/img/icon3.png",
                 },
                 {
