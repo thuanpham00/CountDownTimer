@@ -162,12 +162,6 @@ window.addEventListener("load", function () {
                     img: "./assets/img/icon1.png",
                 },
                 {
-                    name: "Call me",
-                    singer: "Wren evans",
-                    path: "./assets/files/call-me.mp3",
-                    img: "./assets/img/icon1.png",
-                },
-                {
                     name: "Chỉ một đêm nữa thôi",
                     singer: "MCK",
                     path: "./assets/files/chi-mot-dem-nua-thoi.mp3",
@@ -362,7 +356,7 @@ window.addEventListener("load", function () {
                 {
                     name: "Từng quen",
                     singer: "Wren evans",
-                    path: "./assets/files/tung-quen.mp3",
+                    path: "./assets/files/tren-nhung-dam-may.mp3",
                     img: "./assets/img/icon2.png",
                 },
                 {

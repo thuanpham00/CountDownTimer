@@ -163,8 +163,8 @@ window.addEventListener("load", function () {
                 },
                 {
                     name: "Call me",
-                    singer: "Wren evans",
-                    path: "./assets/files/call-me.mp3",
+                    singer: "Karik",
+                    path: "./assets/files/ban-doi.mp3",
                     img: "./assets/img/icon1.png",
                 },
                 {
