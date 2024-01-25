@@ -108,6 +108,12 @@ window.addEventListener("load", function () {
         this.listMusicRender = {
             songs: [
                 {
+                    name: "remix giật giật",
+                    singer: "Hịch cute phô mai que",
+                    path: "./assets/files/remix.mp3",
+                    img: "./assets/img/hich.jpg",
+                },
+                {
                     name: "24h",
                     singer: "Lyly ft Magazine",
                     path: "./assets/files/24h.mp3",
