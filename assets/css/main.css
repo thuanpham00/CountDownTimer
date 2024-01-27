@@ -165,11 +165,11 @@ body {
   justify-content: space-between;
   min-height: 400px;
   /* .bar::-webkit-slider-thumb chọn phần tử con của phần tử có lớp bar mà là "thumb" của thanh trượt (slider)
-   dành cho trình duyệt WebKit (chẳng hạn như Safari hoặc Chrome).
+     dành cho trình duyệt WebKit (chẳng hạn như Safari hoặc Chrome).
 
-  .bar::-moz-range-thumb chọn phần tử con của phần tử có lớp bar mà là "thumb" của 
-  thanh trượt (slider) dành cho trình duyệt Firefox (Mozilla).
-  */
+    .bar::-moz-range-thumb chọn phần tử con của phần tử có lớp bar mà là "thumb" của 
+    thanh trượt (slider) dành cho trình duyệt Firefox (Mozilla).
+    */
 }
 @media (max-width: 991.98px) {
   .timer {
@@ -482,7 +482,7 @@ body {
 }
 .form-timer {
   position: absolute;
-  left: 18%;
+  left: 10%;
   top: 350px;
   max-width: 500px;
   display: flex;
